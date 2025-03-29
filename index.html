@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Resolução de Sistemas Lineares</title>
+  <style>
+    table input {
+      width: 50px;
+      text-align: center;
+    }
+  </style>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="title">
+    <h2>Sistema Linear - Método do Escalonamento</h2>
+  </div>
+
+  <label>Informe o tamanho do sistema (até 10):</label>
+  <input type="number" id="size" min="1" max="10" value="3">
+    <div class="buttons">
+        <button class="generateMatrix" onclick="generateMatrix()">Gerar sistema</button>
+        <button class="cleanScreen" onclick="limparTela()">Limpar tela</button>
+    </div>
+
+  <div id="matrix-input"></div>
+
+  <button class="solve" onclick="solveSystem()">Resolver</button>
+
+  <div id="original-system"></div>
+  <div id="escalonado"></div>
+  <div id="solution"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
