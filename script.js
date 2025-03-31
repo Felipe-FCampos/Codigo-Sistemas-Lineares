@@ -34,7 +34,7 @@ function readMatrix() {
     const row = []
     const originalRow = []
     for (let j = 0; j <= n; j++) {
-      const val = parseFloat(document.getElementById(`a_${i}_${j}`).value)
+      const val = parseFloat(document.getElementById(`a_${i}_${j}`).value.replace(",", "."))
       row.push(val)
       originalRow.push(val)
     }
